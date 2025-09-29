@@ -4,6 +4,7 @@ This project demonstrates a Continuous Integration / Continuous Deployment (CI/C
 
 🎯 Objectives
 
+
 Automate testing with pytest
 
 Build and validate application on every commit
@@ -11,6 +12,7 @@ Build and validate application on every commit
 Demonstrate CI/CD fundamentals for DevOps practice
 
 Provide a foundation to extend into Docker, Kubernetes, or Cloud deployments
+
 
 ⚙️ Tech Stack
 
@@ -24,6 +26,7 @@ Testing: Pytest
 
 Environment: Ubuntu (GitHub-hosted runner)
 
+
 🛠️ Features
 
 ✅ Automated testing pipeline triggered on push & pull requests
@@ -34,6 +37,7 @@ Environment: Ubuntu (GitHub-hosted runner)
 
 ✅ Example configuration for Python projects 
 
+
 📂 Repository Structure
 
 ci-cd-demo/
@@ -43,6 +47,7 @@ ci-cd-demo/
 │── .github/workflows/
 │    └── ci-cd.yml      # GitHub Actions workflow
 └── README.md           # Project documentation
+
 
 🚀 Getting Started
 
@@ -67,22 +72,28 @@ Push to main branch
 
 Pull requests targeting main
 
+
 🔄 Workflow Diagram
+
 flowchart TD
-    A[Push Code to GitHub] --> B[GitHub Actions Trigger]
-    B --> C[Checkout Code]
-    C --> D[Install Dependencies]
-    D --> E[Run Tests with Pytest]
-    E --> F{Tests Pass?}
-    F -- Yes --> G[Build Successful]
-    F -- No --> H[Fail Pipeline]
+
+A[Push Code to GitHub] --> B[GitHub Actions Trigger]
+ B --> C[Checkout Code]
+ C --> D[Install Dependencies]
+ D --> E[Run Tests with Pytest]
+ E --> F{Tests Pass?}
+ F -- Yes --> G[Build Successful]
+ F -- No --> H[Fail Pipeline]
+ 
 
 📌 Future Improvements
+
 Add Docker containerization and push image to DockerHub
 
 Deploy to AWS EC2 / S3 or Azure App Services
 
 Implement Kubernetes deployment in next iteration
+
 
 👤 Author
 
